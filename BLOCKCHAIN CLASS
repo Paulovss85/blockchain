@@ -1,0 +1,712 @@
+---------------Aula dia 09/09---------------------------------
+
+https://test.whatsonchain.com/tx/4925ceafd87356e35bf550f923edcc2d596520325e66e15528d4234cf9c0c746
+
+
+Passo 1
+
+Abrir o link abaixo
+
+https://test.whatsonchain.com/tx/4925ceafd87356e35bf550f923edcc2d596520325e66e15528d4234cf9c0c746
+
+
+Passo 2
+
+
+TXid= num da transaction
+4925ceafd87356e35bf550f923edcc2d596520325e66e15528d4234cf9c0c746
+*********************************************************************
+Versao do SW
+01000000
+*********************************************************************
+qty inputs
+01
+*********************************************************************
+little endian (TXid invertido)
+- usar um site qq para obter o little endian
+- colocar todo lower case
+46c7c0f94c23d42855e1665e322065592dcced23f950f55be35673d8afce2549
+*********************************************************************
+posição output que ira mover os fundos
+
+00000000
+*********************************************************************
+script aberto( sem assinatura)
+
+00
+*********************************************************************
+Finalização do input
+
+ffffffff
+*********************************************************************
+output
+01
+*********************************************************************
+Quantidade de satoshis sendo gastos ( 8 bytes)
+
+0900000000000000
+**********************************************************************
+
+Tamanho do script Hash do output sendo gasto
+
+07
+**********************************************************************
+
+Script Hash( tem que estar em hexadecimal)
+-> Obtido pelo output gasto
+-> clicar no dropdown menu
+-> clicar em HEX e copiar o numero gerado
+
+516a0441424344
+
+**********************************************************************
+
+Finalização
+
+00000000
+**********************************************************************
+
+
+Concatenar os números a partir do versão de sw
+
+010000000146c7c0f94c23d42855e1665e322065592dcced23f950f55be35673d8afce25490000000000ffffffff01090000000000000007516a044142434400000000
+
+
+
+Resultado:
+
+https://test.whatsonchain.com/tx/128c1f793b0e5b863190589c5c4495f4aa587738457ed0c86054ee586a47f6c1
+
+
+
+
+
+
+
+
+Teste 2
+
+txid= 128c1f793b0e5b863190589c5c4495f4aa587738457ed0c86054ee586a47f6c1
+
+little endian: c1f6476a58ee5460c8d07e45387758aaf495445c9c589031865b0e3b791f8c12
+
+script hash: 516a0441424344
+
+
+
+0100000001c1f6476a58ee5460c8d07e45387758aaf495445c9c589031865b0e3b791f8c120000000000ffffffff01080000000000000007516a044142434400000000
+
+
+Resultado:
+
+https://test.whatsonchain.com/tx/747543e549e8adaec9ff687e4f0f711dac773dfac9028c4587f6323742e945ae
+
+
+
+
+New Private Key Formation Data
+
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+PassWord: 12345678
+
+Private Key: c88092569d3628563e5c8ad28255bb2c5c04d01d7e5e20e95abdc5cbc4ca5f3b
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+
+****     Keep your new private key in a safe place      ****
+****     Do not share your private key with anyone      ****
+****  If you lose your New Key, it cannot be recovered  ****
+
+
+
+
+SEC Pub Key:
+ 
+032e0d010cce6c0ff1ba8a503dc811a4e8af6e99b679896d248a03271df97836a0
+
+Address: mgiFSjB1iFsV9uF9NT3gHZv5i4Jrv2GnMk
+
+
+
+
+
+
+
+
+***************************************************************************
+Exercício
+
+tx id 747543e549e8adaec9ff687e4f0f711dac773dfac9028c4587f6323742e945ae
+LE: ae45e9423732f687458c02c9fa3d77ac1d710f4f7e68ffc9aeade849e5437574
+
+
+0100000001ae45e9423732f687458c02c9fa3d77ac1d710f4f7e68ffc9aeade849e54375740000000000ffffffff0204000000000000001976a9140d1b045fd067046850a84ee34792b73488f12d2688ac03000000000000001976a91461b7385275f73bf22c2c7eaf42ec5b3d55040f6e88ac00000000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------Aula dia 11/09---------------------------------
+
+
+
+
+
+https://test.whatsonchain.com/script/6032C38C0BC0E91E726F1E55E1832E434509001A7AED5CFD881B6EF07215E84A
+
+TXID:
+60742b6c2e78d497616953cca5a1db7e786968ba923955951b870e6086a4f246 
+67c076ed276bcf26cf7cf39038e5e4d55a516ef71719c508b118db33c4ee8c75
+
+little endian: 
+46f2a486600e871b95553992ba6869787edba1a5cc53696197d4782e6c2b7460
+758ceec433db18b108c51917f76e515ad5e4e53890f37ccf26cf6b27ed76c067
+
+01000000
+
+01
+
+1c73dfba7a080df63e4adae08c65ebb517997919cd33fbf867406f77d43112de
+758ceec433db18b108c51917f76e515ad5e4e53890f37ccf26cf6b27ed76c067
+00000000
+
+00
+
+ffffffff
+
+02
+
+8E01000000000000 [qty satoshi -1 do minerador= 399]
+-converter para hexa e add 0 antes( 18E -> 018E)
+-inverter os bytes e add zeros (8F01 -> 8F01000000000000)
+
+04 -> tamanho script
+
+53579387
+
+1c00000000000000
+
+04
+
+51016375
+
+00000000
+
+
+01000000011c73dfba7a080df63e4adae08c65ebb517997919cd33fbf867406f77d43112de0000000000ffffffff018E01000000000000045357938700000000
+
+
+
+
+
+0100000001758ceec433db18b108c51917f76e515ad5e4e53890f37ccf26cf6b27ed76c0670000000000ffffffff01
+
+
+
+********************************************************************************************************************
+https://xiaohuiliu.medium.com/introduction-to-bitcoin-smart-contracts-9c0ea37dc757
+
+Locking Script: OP_3 OP_7 OP_ADD OP_EQUAL
+53 57 93 87 – OPCODES em hexadecimal;
+0453579387 – script em OPCODES mais o tamanho em bytes do script;
+
+Unlocking Script: OP_10
+
+5a – OPCODES em hexadecimal;
+015a – script em OPCODES mais o tamanho em bytes do script;
+
+TXID(UTXO) = 398d9b7672bf3b35b5523a9bd876674fb33c5867c272310bb06791a95b78ed8d
+BE = 8ded785ba99167b00b3172c267583cb34f6776d89b3a52b5353bbf72769b8d39
+Construção das Partes da Transação em Hexadecimal:
+01000000
+01
+8ded785ba99167b00b3172c267583cb34f6776d89b3a52b5353bbf72769b8d39
+01000000
+00
+ffffffff
+02
+1e00000000000000
+04
+53579387
+1c00000000000000
+04
+51016375
+00000000
+01000000018ded785ba99167b00b3172c267583cb34f6776d89b3a52b5353bbf72769b8d39010
+0000000ffffffff021e0000000000000004535793871c00000000000000045101637500000000
+Cálculo do tamanho em bytes da TX e da taxa de rede:
+154 / 2 = 77 (Tamanho da TX em Bytes)
+0,05 * 77 = 3,85 = 4 (Cálculo de Satoshis a serem pagos em taxas de rede)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+—-----------------AULA dia 16/09—-----------------------------------
+
+
+Criar um UTXO que some 2 numeros( grandes)
+
+Acessar https://carlosamcruz.github.io/websvmenu/ ->  HOME -> DIDATIC -> True R Token
+criar 100 satoshis
+
+
+
+TXID: 67c076ed276bcf26cf7cf39038e5e4d55a516ef71719c508b118db33c4ee8c75
+
+TX link: https://test.whatsonchain.com/tx/67c076ed276bcf26cf7cf39038e5e4d55a516ef71719c508b118db33c4ee8c75
+
+
+locking script: OP_3 OP_7 OP_ADD OP_EQUAL
+                
+                 53 57 93 87 -> opcode em hexa
+                  
+                 0453579387 -> script em OPCODES mais o tamanho em bytes do script
+
+
+                        
+
+
+num 1: 5000 (0x1388)
+num 2: 4500 (0x1194)
+
+
+
+021388
+021194
+
+080213880211949387
+
+
+
+
+************************************************************************************************
+TXID: 67c076ed276bcf26cf7cf39038e5e4d55a516ef71719c508b118db33c4ee8c75
+
+TX link: https://test.whatsonchain.com/tx/67c076ed276bcf26cf7cf39038e5e4d55a516ef71719c508b118db33c4ee8c75
+                            
+
+
+Resposta:
+
+TXID:
+60742b6c2e78d497616953cca5a1db7e786968ba923955951b870e6086a4f246 
+67c076ed276bcf26cf7cf39038e5e4d55a516ef71719c508b118db33c4ee8c75
+
+little endian: 
+46f2a486600e871b95553992ba6869787edba1a5cc53696197d4782e6c2b7460
+758ceec433db18b108c51917f76e515ad5e4e53890f37ccf26cf6b27ed76c067
+*******************************************************************************************
+
+
+
+
+*******************************18/09***********************************
+Resposta
+https://test.whatsonchain.com/tx/49039b490d27c9c0ae9873b66e677a8e1efd9e2a443309294824a537dbc00d2b
+
+https://test.whatsonchain.com/tx/3d10d9c49e54946fbfb344bd2ac16061178864178d6b5d106e7b2b559eb0c602
+
+Resposta 2
+https://test.whatsonchain.com/tx/a959bede021c44e6a0fef9aa93a123965550eddf8adf4faf34c4d40178f58b55
+
+
+
+***************************************Aula dia 23/09*****************************************************
+
+
+
+-criar uma transação com 100 satoshis
+-
+
+TXID: f543df608a3198fb4530ed03f472aecff131227c7900d7eef6da56842652a761
+
+TX link: https://test.whatsonchain.com/tx/f543df608a3198fb4530ed03f472aecff131227c7900d7eef6da56842652a761
+
+01000000
+01
+61a752268456daf6eed700797c2231f1cfae72f403ed3045fb98318a60df43f5
+00000000
+00
+ffffffff
+01
+6300000000000000 -> 99 satoshis enviados
+51 -> num bytes total
+51
+6a
+4c
+4d -> num bytes tha mensagem em hexa total
+4c6f72656d20697073756d20646f6c6f722073697420616d65742c20636f6e73656374657475722061646970697363696e6720656c69742e20566976616d757320646170696275732061632eaa
+
+
+
+
+
+
+
+Resposta atividade 1
+https://test.whatsonchain.com/tx/d1e0e80546e5d808ce8c84be6fd6e962e9b4083e574e058442034a039f70dce8
+
+
+
+TXID:d1e0e80546e5d808ce8c84be6fd6e962e9b4083e574e058442034a039f70dce8
+LE:e8dc709f034a034284054e573e08b4e962e9d66fbe848cce08d8e54605e8e0d1
+
+01000000
+01
+e8dc709f034a034284054e573e08b4e962e9d66fbe848cce08d8e54605e8e0d1
+00000000
+00
+ffffffff
+01
+6200000000000000 -> 98 satoshis enviados
+xx
+
+
+
+
+
+
+516a4c4d4c6f72656d20697073756d20646f6c6f722073697420616d65742c20636f6e73656374657475722061646970697363696e6720656c69742e20566976616d757320646170696275732061632eaa
+
+
+
+***************************************Aula dia 30/09*****************************************************
+1- a partir da chave privada, acessar o site paulmillr.com/noble
+2- clicar me show apps
+3- app 1 Elliptic curve calculator
+4- Digitar a chave privada
+- verificar as coordenadas geradas:
+
+x	20829367293676865986025548868475982369354380173994401467223710459534857746080
+y	41759410934406717686273265532428157960940671373386871456351028538765352038799
+
+
+33b hex 	032e0d010cce6c0ff1ba8a503dc811a4e8af6e99b679896d248a03271df97836a0
+-> formato comprimido
+
+64b hex
+042e0d010cce6c0ff1ba8a503dc811a4e8af6e99b679896d248a03271df97836a05c52fd2edeae75f39229969412821b25e9a80d464f15791e39970d3c013ef18f
+-> formato nao comprimido
+
+
+5- Acessar a URL https://emn178.github.io/online-tools/sha256.html
+6- mudar para Input code para HEX
+7- Escrever as chaves no campo input uma de cada vez e verificar o HASH256 para cads uma delas
+
+
+Parte 1
+input= chave comprimida
+032e0d010cce6c0ff1ba8a503dc811a4e8af6e99b679896d248a03271df97836a0
+
+outuput= é o HASH SH256 da chave comprimida
+c30169eec707e1b7a83f17aa410877085daac1505382728679edddb974f45081
+
+
+Parte 2
+input= chave não comprimida
+042e0d010cce6c0ff1ba8a503dc811a4e8af6e99b679896d248a03271df97836a05c52fd2edeae75f39229969412821b25e9a80d464f15791e39970d3c013ef18f
+
+outuput= é o HASH SH256 da chave não comprimida
+ee99f28f092a7d002631362212bb76c0f45649bf0a41e0b416a96cd75f848b13
+
+8- acessar o site https://www.fileformat.info/tool/hash.htm e gerar o HASH do HASH256 dos outputs anteriores( um de cada vez)
+
+Parte 1- output da chave comprimida
+Binary HASH field
+->c30169eec707e1b7a83f17aa410877085daac1505382728679edddb974f45081
+
+Resultado em  RpeMD160( verificar a tabela resultante)
+RipeMD160	0d1b045fd067046850a84ee34792b73488f12d26
+
+
+Parte 2- output da chave não comprimida
+Binary HASH field
+->ee99f28f092a7d002631362212bb76c0f45649bf0a41e0b416a96cd75f848b13
+
+Resultado em  RpeMD160( verificar a tabela resultante)
+RipeMD160	c6f6e0d2ceaf1730d1ea4eb8bdef1e22c1d8dba2
+
+
+9-acrescentar 00 antes do resultado em RipeMD160 para  cada hash
+
+Parte 1- RipeMD160 da chave comprimida
+000d1b045fd067046850a84ee34792b73488f12d26
+
+
+Parte 2- RipeMD160 da chave não comprimida
+00c6f6e0d2ceaf1730d1ea4eb8bdef1e22c1d8dba2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10- acessar a URL https://emn178.github.io/online-tools/sha256.html
+Obter o HASHDUPLO
+
+Parte1- HASH DUPLO da chave RipeMD160 da chave comprimida
+input=RipeMD160 da chave comprimida
+->000d1b045fd067046850a84ee34792b73488f12d26
+gerar output
+->509d8a2f02bbfd508443d5d76c337944e4c46c52de36f3fa06cb7ed4c6322b7c
+
+input= output anterior
+
+gerar output
+->ee232b6fd464b60230036a30bdab1da0cc066ab8c400290fa94f156f037ae1f5
+
+Parte2- HASH DUPLO da chave RipeMD160 da chave nao  comprimida
+input=RipeMD160 da chave comprimida
+->00c6f6e0d2ceaf1730d1ea4eb8bdef1e22c1d8dba2
+gerar output
+->b4e8549a867c54dc05d27000cc428bf932e9c441b51d2631d1fb136ffe14e9db
+
+input= output anterior
+
+gerar output
+->c943c06af0181566a9fd9a0eb19740e0b3ee7eb15fac82007552bfe43ca77924
+
+
+
+11- Usar os 4 primeiros bytes do hash duplo para ser o checksum
+
+Parte1- HASH DUPLO da chave RipeMD160 da chave comprimida
+
+ee232b6fd464b60230036a30bdab1da0cc066ab8c400290fa94f156f037ae1f5
+
+CheckSUM = ee232b6f
+
+Parte2- HASH DUPLO da chave RipeMD160 da chave nao comprimida
+
+c943c06af0181566a9fd9a0eb19740e0b3ee7eb15fac82007552bfe43ca77924
+
+CheckSUM = c943c06a
+
+
+
+
+12- Concatenar 00 + RMD160+CHECKSUM
+
+Comprimido
+->000d1b045fd067046850a84ee34792b73488f12d26ee232b6f
+
+Nao comprimido
+->00c6f6e0d2ceaf1730d1ea4eb8bdef1e22c1d8dba2c943c06a
+
+
+13- Converter valor decimal do passo anterior para BASE58
+acessar url www.dcode.fr/base-58=cipher
+
+
+Comprimido ( em hexa)
+->Comprimido
+->000d1b045fd067046850a84ee34792b73488f12d26ee232b6f
+valor em decimal
+-> 321346795335415684299910669791487059182712672858017049455
+valor em BASE58
+->2CJ9g62uESENnmXet5JTehkr4iA6GZ5A6
+
+Nao comprimido
+->00c6f6e0d2ceaf1730d1ea4eb8bdef1e22c1d8dba2c943c06a
+valor em decimal
+->4878592108849140636657666351412650455467161152772869701738
+valor em base58
+->K92YP8ppErzgFjV6ARQQQd1Xtaj8ShATK
+
+
+14- acrescentar 1 na frente do resultado anterior
+
+Comprimido ( em BASE58)
+-> 2CJ9g62uESENnmXet5JTehkr4iA6GZ5A6
+acrescentar 1
+->12CJ9g62uESENnmXet5JTehkr4iA6GZ5A6
+
+
+Nao comprimido( em base58)
+->K92YP8ppErzgFjV6ARQQQd1Xtaj8ShATK
+acrescentar 1
+->1K92YP8ppErzgFjV6ARQQQd1Xtaj8ShATK
+
+15- comparar com os endereçoas originais
+
+Address: 12CJ9g62uESENnmXet5JTehkr4iA6GZ5A6 ( react app na mainnet)
+obtido:     12CJ9g62uESENnmXet5JTehkr4iA6GZ5A6
+
+
+
+Address: 1K92YP8ppErzgFjV6ARQQQd1Xtaj8ShATK ( react app na mainnet)
+obtido:     1K92YP8ppErzgFjV6ARQQQd1Xtaj8ShATK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conceitos basicos:
+1. TXID (Transaction ID)
+O TXID é um identificador exclusivo de uma transação no blockchain. Ele é gerado através de um hash criptográfico da transação. Toda vez que uma transação é registrada no blockchain do Bitcoin, ela recebe um TXID único, que serve como uma espécie de "impressão digital" daquela transação.
+Exemplo:
+Suponha que Alice envie 0.5 BTC para Bob. Essa transação será registrada na rede Bitcoin e, quando isso acontecer, será gerado um TXID para identificá-la. Esse TXID é uma sequência de números e letras que pode ser usada para rastrear ou verificar a transação.
+
+Com esse TXID, qualquer pessoa pode consultar a transação no blockchain para ver detalhes como o valor transferido, o endereço de envio e o endereço de recebimento.
+2. UTXO (Unspent Transaction Output)
+UTXO significa Unspent Transaction Output, ou seja, "Saída de Transação Não Gasta". No modelo de transações do Bitcoin, as moedas não existem como um saldo total em uma conta, mas sim como "saídas de transações" que ainda não foram gastas. Quando você gasta bitcoins, você está utilizando UTXOs que foram atribuídos a você em transações anteriores.
+Exemplo:
+Imagine que Alice tem 1 BTC em duas UTXOs diferentes:
+0.6 BTC recebidos da transação 1.
+0.4 BTC recebidos da transação 2.
+Se Alice quiser enviar 0.8 BTC para Bob, ela terá que gastar essas duas UTXOs (0.6 + 0.4 = 1 BTC). A transação criará uma nova UTXO de 0.8 BTC para Bob e, possivelmente, uma outra UTXO de 0.2 BTC de "troco" para Alice, se ela quiser.
+3. Script Hash
+O Script Hash é uma parte do sistema de scripts do Bitcoin que permite condições de gasto mais complexas para as transações. O Bitcoin usa um sistema de script básico (Bitcoin Script), que define as condições sob as quais uma UTXO pode ser gasta. Um Script Hash geralmente refere-se a um P2SH (Pay-to-Script-Hash), que é uma forma de pagamento em que a condição para gastar a UTXO é definida por um script que só é revelado quando a UTXO é gasta.
+Exemplo:
+Normalmente, ao enviar Bitcoin, o remetente cria uma transação com uma condição simples: o destinatário deve provar que possui a chave privada correspondente ao endereço de destino (normalmente através de uma assinatura digital).
+No entanto, com um P2SH, o remetente pode definir condições mais complexas, como:
+Multisig (várias assinaturas são necessárias para gastar o valor).
+Time-lock (a UTXO só pode ser gasta após um determinado tempo).
+Ou outros scripts personalizados.
+
+
+Uma transação no blockchain do Bitcoin é o processo de transferir valores entre usuários da rede. Para entender como ela funciona, vamos detalhar as principais etapas e os componentes envolvidos.
+
+### Componentes de uma Transação Bitcoin
+Antes de entrar no processo em si, é importante entender os elementos essenciais de uma transação Bitcoin:
+
+1. **Entradas (Inputs)**: São as referências a transações anteriores de onde os bitcoins foram recebidos. Cada entrada é uma **UTXO (Unspent Transaction Output)** de uma transação anterior que ainda não foi gasta.
+
+2. **Saídas (Outputs)**: São os novos destinos dos bitcoins transferidos. Cada saída especifica um valor (em satoshis) e um endereço de Bitcoin que será o novo "dono" dos bitcoins.
+
+3. **Assinaturas Digitais**: Para gastar bitcoins, o proprietário da chave privada correspondente ao endereço da entrada precisa assinar a transação. Isso prova a posse dos bitcoins e autoriza a transação.
+
+4. **TXID (Transaction ID)**: É o identificador único da transação, que pode ser usado para rastreá-la na blockchain.
+
+---
+
+### Passo a Passo de Como uma Transação Funciona
+
+#### 1. **Preparação**
+Quando um usuário (como Alice) quer enviar bitcoins para outra pessoa (como Bob), sua carteira seleciona uma ou mais **UTXOs** (saídas de transações anteriores que ainda não foram gastas) que ela recebeu. A soma dessas UTXOs será usada para compor a transação.
+
+#### 2. **Construção da Transação**
+A transação é composta por:
+- **Entradas**: Alice usa as UTXOs que ela possui. Cada entrada é uma referência a uma transação anterior que contém bitcoins.
+- **Saídas**: Alice cria uma nova UTXO que envia bitcoins para Bob. Ela também pode criar uma segunda UTXO para si mesma como "troco", se o valor das entradas for maior do que o que está enviando para Bob.
+
+#### Exemplo:
+Alice tem dois UTXOs:
+- 0.3 BTC da transação A.
+- 0.5 BTC da transação B.
+
+Se ela quiser enviar 0.6 BTC para Bob, ela pode usar essas duas UTXOs como entradas. A transação terá:
+- **Entrada 1**: 0.3 BTC da transação A.
+- **Entrada 2**: 0.5 BTC da transação B.
+- **Saída 1**: 0.6 BTC para Bob.
+- **Saída 2**: 0.2 BTC de troco para Alice (se sobrar após deduzir taxas).
+
+#### 3. **Assinatura Digital**
+Para validar a transação, Alice precisa **assinar** digitalmente a transação com sua chave privada. Isso prova que ela é a dona dos bitcoins que está gastando. A assinatura é criada a partir de um hash da transação e da chave privada de Alice, garantindo segurança e integridade.
+
+#### 4. **Envio para a Rede**
+Depois de montada e assinada, a transação é transmitida para a rede Bitcoin. Ela é então propagada para os nós (computadores que participam da rede).
+
+#### 5. **Verificação pelos Nós**
+Quando os nós recebem a transação, eles a verificam. Essa verificação inclui:
+- Garantir que Alice realmente possua as UTXOs que está tentando gastar.
+- Verificar se a assinatura digital é válida.
+- Checar se as entradas e saídas fazem sentido (não gastar mais bitcoins do que o disponível, por exemplo).
+
+#### 6. **Mineração e Confirmação**
+Se a transação for válida, ela será incluída no **mempool**, que é o local onde as transações aguardam para serem incluídas em um bloco.
+
+- Um minerador seleciona a transação e tenta incluí-la em um bloco novo.
+- Para isso, o minerador precisa resolver um problema matemático complexo (o **Proof-of-Work**).
+- Quando o minerador resolve o problema e encontra um novo bloco, ele inclui a transação nesse bloco.
+
+#### 7. **Confirmação**
+Assim que a transação é incluída em um bloco, ela recebe sua primeira **confirmação**. A partir desse momento, a transação é registrada de forma permanente no blockchain. Cada novo bloco que é minerado depois daquele onde a transação foi incluída adiciona uma confirmação extra, tornando a transação cada vez mais difícil de reverter.
+
+#### 8. **Conclusão**
+Após a transação ser confirmada, Bob terá os bitcoins em sua carteira (como uma nova UTXO que ele pode gastar futuramente). O processo está completo, e a transação foi finalizada com sucesso.
+
+---
+
+### Exemplo Visual de Uma Transação
+
+Imagine que Alice tenha 1 BTC e deseja enviar 0.6 BTC para Bob. O processo seria assim:
+
+1. Alice usa uma UTXO de 1 BTC (entrada).
+2. Ela envia 0.6 BTC para Bob (saída 1).
+3. Envia 0.4 BTC de troco para ela mesma (saída 2).
+4. A transação é assinada e enviada para a rede.
+5. Mineradores validam a transação, incluindo-a em um bloco.
+6. Após uma ou mais confirmações, Bob pode gastar os 0.6 BTC que recebeu.
+
+---
+
+### Taxas de Transação
+As taxas de transação são pagas aos mineradores como incentivo para incluir a transação no próximo bloco. A taxa é a diferença entre a soma das entradas e a soma das saídas. Por exemplo, se Alice usa uma entrada de 1 BTC e envia 0.6 BTC para Bob e 0.39 BTC para si mesma, a diferença de 0.01 BTC é a taxa paga ao minerador.
+
+### Resumo:
+- Uma transação Bitcoin começa com entradas (UTXOs anteriores) e cria novas saídas (novas UTXOs).
+- A transação é assinada digitalmente pelo remetente e propagada para a rede.
+- Mineradores verificam e incluem a transação no blockchain, garantindo sua irreversibilidade após as confirmações.
